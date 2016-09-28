@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Scripts javascript : Aperçu</title>
+<script type="text/javascript" language="javascript">
+var lien = "";
+function rand(max) {
+  return (Math.floor(Math.random() * max));
+}
+
+function initaec() {
+	for (var i=0;i<document.links.length;i++) {
+		if (document.links[i].className == "aec") {
+			document.links[i].onmouseover = aec;
+			document.links[i].onmouseout = unaec;
+			document.links[i].aecTimer = null;
+		}
+	}
+}
+
+function aec(isFF) {
+	if (isFF) {
+		lien = isFF.target;
+		isFF.target.aecTimer = setInterval('lien.style.color = "rgb("+rand(256)+","+rand(256)+","+rand(256)+")";',100);
+	}
+}
+
+function unaec(isFF) {
+	if (isFF) { 
+		clearInterval(isFF.target.aecTimer);
+		isFF.target.aecTimer = null;
+		isFF.target.style.color = "";
+	}
+}
+</script>
+
+</head>
+
+<body onload="initaec();">
+
+<br /><p class="tt" >Effet arc en ciel sur un lien.</p><br /><br />
+
+Passer la souris sur le lien : <br><br>
+<b><a href="http://www.outils-web.com" class="aec">Lien cliquable - http://www.outils-web.com</a></b>
+
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+body {
+  background-image: url(https://images7.alphacoders.com/695/695787.png);
+}
+
+div {
+    border-radius: 5px;
+    border: 2px solid #00F7D6
+}
+
+.header {
+    z-index: 1;
+	position: fixed;
+	width: 99%;
+	margin-top: 0px;
+	height: 60px;
+	background-color: #15655B;
+	margin-bottom: 10px;
+}
+
+img {
+	margin-left:35px;
+	margin-top: -10px;
+
+
+}
+
+.name {
+	float:left;
+	margin-left: 5px;
+	padding-top: 5px;
+	font-size: 16px;
+	font-family: Verdana, sans-serif;
+	color: #6AE8D7;
+}
+
+.email {
+	float:right;
+	margin-right: 5px;
+	padding-top: 5px;
+	font-size: 16px;
+	font-family: Verdana, sans-serif;
+	color: #6AE8D7;
+}
+
+.left {
+    position: relative;
+	float: left;
+	margin-top: 60px;
+	width: 12%;
+	height: 650px;
+	background-color: #0B8373;
+	margin-bottom: 10px;
+}
+
+.styleleft {
+    color: #6AE8D7;
+    font-family: Cursive;
+}
+
+h1 {
+	color:#00483E;
+    font-family: Verdana, sans-serif;
+}
+
+h2 {
+    color:#00483E;
+    font-family: Verdana, sans-serif;
+    margin-left: 20px;
+}
+
+h3 {
+    color:#00483E;
+    font-family: Verdana, sans-serif;
+    margin-left: 20px;
+}
+
+p {
+	margin-left: 20px;
+}
+
+.objectif {
+    font-family: Forte;
+    color: #1F9787;
+}
+
+.formation {
+    color: #1F9787;
+    font-family: Cursive;
+    border: none;
+}
+
+.right {
+    position: relative;
+	float: right;
+	margin-top: 60px;
+	width: 87%;
+	height: 650px;
+	background-color: #B9F2EA;
+	margin-bottom: 10px;
+}
+
+.stylelisteleft {
+    position: relative;
+    clear: right;
+    color: #00483E;
+    width: bold;
+
+}
+
+
+.footer {
+    position: relative;
+	height: 50px;
+	width: 100%;
+	margin-top: -10px;
+	margin-left: 0px;
+	background-color: #DCF9F5;
+	clear: both;
+	font-family: Verdana, sans-serif;
+	font-size: 14px;
+	text-align: center;
+	color: #6AE8D7;
+}
+span {
+	font-weight: bold;
+}
+
+.zoom {
+width: 320px;
+height: 240px;
+}
+.logo {
+width: 100%;
+height: 100%;
+}
+.logo img {
+/* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+-webkit-transition: all 1s ease; /* Safari et Chrome */
+-moz-transition: all 1s ease; /* Firefox */
+-ms-transition: all 1s ease; /* Internet Explorer 9 */
+-o-transition: all 1s ease; /* Opera */
+transition: all 1s ease;
+}
+.logo:hover img {
+/* L'image est grossie de 25% */
+-webkit-transform:scale(1.25); /* Safari et Chrome */
+-moz-transform:scale(1.25); /* Firefox */
+-ms-transform:scale(1.25); /* Internet Explorer 9 */
+-o-transform:scale(1.25); /* Opera */
+transform:scale(1.25);
+}
